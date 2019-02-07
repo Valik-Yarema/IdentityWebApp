@@ -21,7 +21,7 @@ namespace WebApp.DAL.Repositories
 
         public IdentityUnitOfWork(string connectionString)
         {
-            db = new ApplicationContext(connectionString);
+            db = new ApplicationContext();
             userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(db));
             roleManager = new ApplicationRoleManager(new RoleStore<ApplicationRole>(db));
             clientManager = new ClientManager(db);
