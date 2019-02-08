@@ -38,11 +38,11 @@ namespace WebApp.BLL.Services
                 ClientProfile clientProfile = new ClientProfile { Id = user.Id, Address = userDto.Address, Name = userDto.Name };
                 Database.ClientManager.Create(clientProfile);
                 await Database.SaveAsync();
-                return new OperationDetails(true, "Регистрация успешно пройдена", "");
+                return new OperationDetails(true, "Registration successfully completed", "");
             }
             else
             {
-                return new OperationDetails(false, "Пользователь с таким логином уже существует", "Email");
+                return new OperationDetails(false, "ПA user with such a login already exists", "Email");
             }
         }
 

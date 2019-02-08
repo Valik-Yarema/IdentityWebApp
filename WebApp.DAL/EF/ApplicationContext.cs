@@ -17,6 +17,12 @@ namespace WebApp.DAL.EF
         }
 
         public DbSet<ClientProfile> ClientProfiles { get; set; }
+        public DbSet<UserMessage> UserMessages { get; set; }
+        public DbSet<AddInfo> AddInfos { get; set; }
+        public DbSet<PhoneRec> PhoneRecs { get; set; }
+        public DbSet<MessageRec> MessageRecs { get; set; }
+      
+
     }
    
 }

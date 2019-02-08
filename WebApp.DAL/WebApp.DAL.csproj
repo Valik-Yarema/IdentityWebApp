@@ -68,6 +68,15 @@
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Migrations\201902071255592_AddCompanyMigration.cs" />
+    <Compile Include="Migrations\201902071255592_AddCompanyMigration.Designer.cs">
+      <DependentUpon>201902071255592_AddCompanyMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902081031085_AddCompanyMigration1.cs" />
+    <Compile Include="Migrations\201902081031085_AddCompanyMigration1.Designer.cs">
+      <DependentUpon>201902081031085_AddCompanyMigration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClientManager.cs" />
     <Compile Include="Repositories\IdentityUnitOfWork.cs" />
@@ -76,6 +85,13 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902071255592_AddCompanyMigration.resx">
+      <DependentUpon>201902071255592_AddCompanyMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902081031085_AddCompanyMigration1.resx">
+      <DependentUpon>201902081031085_AddCompanyMigration1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

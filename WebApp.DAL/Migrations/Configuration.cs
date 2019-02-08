@@ -9,7 +9,8 @@ namespace WebApp.DAL.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            ContextKey = "WebApp.DAL.EF.ApplicationContext";
         }
 
         protected override void Seed(WebApp.DAL.EF.ApplicationContext context)
