@@ -55,16 +55,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EF\ApplicationContext.cs" />
+    <Compile Include="Entities\AddInfo.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\ClientProfile.cs" />
+    <Compile Include="Entities\MessageRec.cs" />
+    <Compile Include="Entities\PhoneRec.cs" />
+    <Compile Include="Entities\UserMessage.cs" />
     <Compile Include="Identity\ApplicationRoleManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\201902071255592_AddCompanyMigration.cs" />
     <Compile Include="Migrations\201902071255592_AddCompanyMigration.Designer.cs">
       <DependentUpon>201902071255592_AddCompanyMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902081031085_AddCompanyMigration1.cs" />
+    <Compile Include="Migrations\201902081031085_AddCompanyMigration1.Designer.cs">
+      <DependentUpon>201902081031085_AddCompanyMigration1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +88,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902071255592_AddCompanyMigration.resx">
       <DependentUpon>201902071255592_AddCompanyMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902081031085_AddCompanyMigration1.resx">
+      <DependentUpon>201902081031085_AddCompanyMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

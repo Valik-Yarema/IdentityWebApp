@@ -87,6 +87,7 @@ namespace WebApp.Controllers
                     Password = model.Password,
                     Address = model.Address,
                     Name = model.Name,
+                    UserName=model.UserName,
                     Role = "user"
                 };
                 OperationDetails operationDetails = await UserService.Create(userDto);

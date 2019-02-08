@@ -53,8 +53,7 @@ namespace WebApp.BLL.Services
             ApplicationUser user = await Database.UserManager.FindAsync(userDto.Email, userDto.Password);
             // авторизуем его и возвращаем объект ClaimsIdentity
             if (user != null)
-                claim = await Database.UserManager.CreateIdentityAsync(user,
-                                            DefaultAuthenticationTypes.ApplicationCookie);
+                claim = await Database.UserManager.CreateIdentityAsync(user,DefaultAuthenticationTypes.ApplicationCookie);
             return claim;
         }
 

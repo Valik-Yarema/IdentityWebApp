@@ -13,5 +13,8 @@ namespace WebApp.DAL.Interfaces
         IClientManager ClientManager { get; }
         ApplicationRoleManager RoleManager { get; }
         Task SaveAsync();
+       // void BeginTransaction();
+        //void Commit();
+      //  void Rollback();
     }
 }
