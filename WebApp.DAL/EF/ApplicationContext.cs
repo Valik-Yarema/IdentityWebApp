@@ -11,7 +11,7 @@ namespace WebApp.DAL.EF
 {
     public class ApplicationContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationContext()
+        public ApplicationContext(string connectionString)
         : base("DBConnection", throwIfV1Schema: false)
         {
         }

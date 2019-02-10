@@ -87,6 +87,7 @@ namespace WebApp.Controllers
                 {
                     Email = model.Email,
                     Password = model.Password,
+                    PhoneNumber = model.PhoneNumber,
                     Address = model.Address,
                     Name = model.Name,
                     UserName = model.UserName,
@@ -132,6 +133,7 @@ namespace WebApp.Controllers
                 UserName = "somemail@mail.ru",
                 Password = "ad46D_ewr3",
                 Name = "Random Random Randomovith",
+                PhoneNumber="+380957676554",
                 Address = "ул. Спортивная, д.30, кв.75",
                 Role = "admin",
             }, new List<string> { "user", "admin" });

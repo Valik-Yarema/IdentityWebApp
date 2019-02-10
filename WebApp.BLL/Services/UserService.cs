@@ -42,7 +42,7 @@ namespace WebApp.BLL.Services
             }
             else
             {
-                return new OperationDetails(false, "ПA user with such a login already exists", "Email");
+                return new OperationDetails(false, "user with such a login already exists", "Email");
             }
         }
 

@@ -16,8 +16,6 @@ namespace WebApp.DAL.Entities
             [Required]
             public string PhoneNumber { get; set; }
 
-
-
             public ICollection<AddInfo> PhoneColl { get; set; }
             public ICollection<MessageRec> PhoneMesColl { get; set; }
 
